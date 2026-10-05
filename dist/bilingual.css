@@ -1,0 +1,54 @@
+@font-face{font-family:Vazirmatn;src:url('assets/vazirmatn-latin-400.woff2') format('woff2');font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0100-024F}
+@font-face{font-family:Vazirmatn;src:url('assets/vazirmatn-latin-700.woff2') format('woff2');font-weight:700;font-display:swap;unicode-range:U+0000-00FF,U+0100-024F}
+.language-toggle{width:44px;height:44px;min-width:44px;display:grid;place-items:center;border:1px solid #c7bacf;border-radius:50%;font-size:12px;font-weight:700;background:transparent}
+.language-toggle:hover{background:var(--lilac)}
+.hero-oval{background:var(--hero-bg,var(--sage));transition:background .5s ease}
+.hero-product{animation:heroFloat 7s ease-in-out infinite}
+.hero-art.is-changing .hero-product{animation:productSwitch .5s var(--ease)}
+.contact-section{display:grid;grid-template-columns:1fr 1.3fr;align-items:center;gap:40px;padding-block:30px;margin-top:32px;border-block:1px solid #f7f5ed30}
+.contact-section h2{font-size:20px;margin:0 0 8px}.contact-section p{font-size:13px;color:#d4cbd9;margin:0}
+.contact-links{display:flex;flex-direction:column;gap:12px}.contact-links a{display:flex;align-items:center;gap:18px;min-height:44px;font-size:14px;padding-block:4px}
+.contact-links a>span:first-child{font-size:11px;color:#d4cbd9;min-width:62px}.contact-links bdi{overflow-wrap:anywhere;min-width:0}.contact-links a>span:last-child{margin-inline-start:auto;font-size:20px;color:var(--sage)}
+.contact-links a:hover bdi{text-decoration:underline;text-underline-offset:5px}
+html[dir=ltr] .hero h1{font-family:Georgia,serif;line-height:1.2;letter-spacing:-2.5px;font-size:clamp(49px,5.8vw,78px);margin-block:30px}
+html[dir=ltr] .word-you svg{right:auto;left:-2px;bottom:-8px}
+html[dir=ltr] .hero-description{max-width:430px;line-height:1.9}
+html[dir=ltr] .hero-buttons{gap:20px}
+html[dir=ltr] .hero .button{font-size:13px;padding-inline:20px;gap:20px}
+html[dir=ltr] .hero .text-link{font-size:12px}
+html[dir=ltr] .hero-flavor-tabs button{font-size:10px;gap:5px}
+html[dir=ltr] .text-link span,html[dir=ltr] .button span{transform:scaleX(-1)}
+html[dir=ltr] .scroll-note{right:auto;left:0}
+html[dir=ltr] .section-heading h2{font-family:Georgia,serif;font-size:clamp(28px,3.2vw,42px);line-height:1.3;letter-spacing:-.9px}
+html[dir=ltr] .flavor-card h3 button,html[dir=ltr] .vessel-choices button{text-align:left}
+html[dir=ltr] .flavor-card-top{flex-wrap:wrap;gap:7px}
+html[dir=ltr] .flavor-card p{min-height:48px}
+html[dir=ltr] .name-input-wrap input{padding:12px 35px 12px 13px}
+html[dir=ltr] .name-input-wrap>span{left:auto;right:14px}
+html[dir=ltr] .story-copy h2{font-family:Georgia,serif;font-size:39px;line-height:1.35;letter-spacing:-1px}
+html[dir=ltr] .product-meta dd{text-align:right}
+html[dir=ltr] .footer-bottom a{margin-right:0;margin-left:auto}
+@media(max-width:1100px){.header-actions{gap:12px}html[dir=ltr] .hero h1{font-size:61px}html[dir=ltr] .hero-buttons{flex-wrap:wrap;gap:15px}}
+@media(max-width:800px){html[dir=ltr] .hero h1{font-size:47px}html[dir=ltr] .hero .button{font-size:11px;padding-inline:15px}html[dir=ltr] .hero .text-link{font-size:11px}.contact-section{gap:25px;grid-template-columns:1fr 1.5fr}.contact-links a{font-size:13px;gap:12px}}
+@media(max-width:600px){
+ .header{padding-inline:14px}.header-actions{gap:4px}.brand{gap:7px}.brand>span{font-size:25px}.brand img{width:23px;height:32px}
+ .language-toggle{width:38px;min-width:38px;height:44px;font-size:11px}.motion-toggle{width:30px;min-width:30px}.menu-toggle{width:38px;min-width:38px}.cart-trigger{min-width:44px}
+ html[dir=ltr] .hero h1{font-size:clamp(45px,12.5vw,62px);letter-spacing:-2px;margin-block:24px}
+ html[dir=ltr] .hero .button{font-size:12px;padding-inline:17px}html[dir=ltr] .hero .text-link{font-size:12px}
+ html[dir=ltr] .hero-art{height:auto;grid-template-rows:425px auto;row-gap:20px}
+ html[dir=ltr] .hero-product{grid-area:1 / 1}
+ html[dir=ltr] .hero-flavor-tabs{position:static;grid-area:2 / 1;transform:none;justify-self:center;width:100%;gap:5px}
+ html[dir=ltr] .hero-flavor-tabs button{font-size:10px;padding-inline:9px}
+ html[dir=ltr] .hero .round-stamp{bottom:80px}html[dir=ltr] .hero .star-two{bottom:105px}
+ html[dir=ltr] .section-heading h2{font-size:31px}html[dir=ltr] .section-heading>p{line-height:1.9}
+ html[dir=ltr] .flavor-card h3{font-size:16px}html[dir=ltr] .flavor-card p{font-size:12px;min-height:65px}
+ html[dir=ltr] .card-price{font-size:13px}html[dir=ltr] .card-price small{font-size:9px}
+ html[dir=ltr] .step-heading h3{font-size:12px}html[dir=ltr] .step-heading small{font-size:10px}
+ html[dir=ltr] .builder-flavor{font-size:11px}html[dir=ltr] .vessel-choices button{font-size:11px}
+ html[dir=ltr] .builder-total .button{font-size:12px}html[dir=ltr] .story-copy h2{font-size:34px}
+ html[dir=ltr] .footer-top{gap:20px;align-items:flex-start}html[dir=ltr] .footer-top p{font-size:18px}
+ html[dir=ltr] .footer-top .button{font-size:11px;gap:10px;padding-inline:12px;white-space:nowrap}
+ .contact-section{grid-template-columns:1fr;gap:17px;padding-block:24px}.contact-section h2{font-size:18px}
+ .contact-links a{gap:12px;font-size:12px}.contact-links a>span:first-child{min-width:48px;font-size:10px}
+}
+@media(max-width:360px){html[dir=ltr] .hero-art{grid-template-rows:395px auto}html[dir=ltr] .hero-flavor-tabs button{font-size:9px;padding-inline:7px}.contact-links a{font-size:11px;gap:8px}.contact-links a>span:first-child{min-width:43px}}

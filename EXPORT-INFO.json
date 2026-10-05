@@ -1,0 +1,36 @@
+{
+  "project": "SCOOVIA",
+  "version": "0.3.2",
+  "source_commit": "750a5085a34321fe4826b837a1ce6825dc3a4cea",
+  "export_date_utc": "2026-10-05",
+  "site_directory": "dist",
+  "source_files_verified_identical": false,
+  "portable_export_changes": [
+    "Local server and Persian setup guide added",
+    "Portable npm scripts added",
+    "README setup instructions added",
+    "Asset documentation paths made relative",
+    "Two confirmed localization corrections and regression tests",
+    "Audit report added",
+    "Git LF line endings configured",
+    "Windows nested asset paths fixed in the local server, with path and HTTP regression tests"
+  ],
+  "excluded": [
+    ".git history",
+    ".openai/hosting.json (original hosting account configuration)"
+  ],
+  "published_base_version": "0.3.0",
+  "assets_verified_identical": true,
+  "audit_input_archive_sha256": "d0174dd737ca95ccda2ad9858e08a39632028c414444535a7e003b8b465c4bbb",
+  "audit_date_utc": "2026-10-05",
+  "code_corrections": [
+    "dist/i18n.js: translate only own dictionary keys",
+    "dist/app.js: synchronize mobile menu aria-label after language change",
+    "scripts/serve.mjs: validate request backslashes before native path resolution"
+  ],
+  "regression_tests_passed": 21,
+  "builder_combinations_checked": 8256,
+  "published_to_hosted_site": false,
+  "windows_path_api_tests": true,
+  "native_windows_execution": false
+}

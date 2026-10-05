@@ -1,0 +1,15 @@
+{
+  "name": "scoovia-flavor-studio",
+  "version": "0.3.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/model.js && node --check dist/preview.js && node --check dist/recipe-card.js && node --check dist/i18n.js && node --check scripts/serve.mjs && node --check scripts/static-path.mjs",
+    "test": "node --test tests/i18n.test.mjs tests/model.test.mjs tests/preview.test.mjs tests/server.test.mjs",
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

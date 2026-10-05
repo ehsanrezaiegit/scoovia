@@ -1,0 +1,103 @@
+/* Version 02: shared preview geometry, readable controls and touch targets. */
+:root{--muted:#685e6c}
+.name-input-wrap input::placeholder{color:var(--muted);opacity:1}
+.creation-name>span,.creation-name p,.preview-caption,.studio-section .eyebrow{color:#635170}
+.flavor-en{opacity:.85}
+.sauce-layer{background:linear-gradient(135deg,#ffffff20,transparent 48%),var(--sauce-color);filter:drop-shadow(0 3px 2px #37244118)}
+.creation .stack{bottom:var(--stack-bottom,125px)}
+.preview-stage .creation{height:430px;transform-origin:center}
+.slot-group{flex-direction:column;gap:4px}
+.slot-group .scoop-slot{padding:10px 6px;min-height:44px}
+.slot-group .slot-remove{position:static;transform:none;width:100%;height:32px;margin:0;font-size:11px;background:transparent;border:1px dashed #d3c9d9;border-radius:5px}
+.scoop-slot.add-slot{min-height:44px;align-self:flex-start;flex-basis:44px}
+.motion-toggle{width:44px;height:44px;display:grid;place-items:center;border:1px solid #ded6e1;border-radius:50%;background:transparent}
+.motion-toggle svg{width:19px;height:19px}
+.motion-toggle[aria-pressed=true]{background:var(--lilac)}
+body.motion-paused *,body.motion-paused *:before,body.motion-paused *:after{animation:none!important;transition:none!important}
+.storage-notice{font-size:12px;line-height:1.9;color:#755438;padding:12px;background:#f2e5c8;border-radius:5px}
+.desktop-nav{font-size:14px}
+.hero-description{font-size:17px}
+.hero .button{font-size:14px}
+.hero .text-link{font-size:13px}
+.hero-flavor-tabs{gap:7px}
+.hero-flavor-tabs button{min-height:44px;font-size:11px;padding:8px 12px}
+.hero-flavor-tabs i{flex-shrink:0}
+.filter-tabs button{font-size:13px;min-height:44px}
+.section-heading>p{font-size:14px}
+.flavor-card p{font-size:13px}
+.card-add,.dialog-close{min-width:44px;width:44px;min-height:44px;height:44px;flex-shrink:0}
+.card-price{font-size:15px}
+.card-price small{font-size:11px}
+.step-heading h3,.name-label,.extras-step label{font-size:14px}
+.step-heading small,.selection-help{font-size:11px;line-height:1.8}
+.vessel-choices button{font-size:13px}
+.vessel-choices small{font-size:11px}
+.builder-flavor{font-size:12px;min-height:66px}
+.extras-step select{font-size:13px;min-height:44px}
+.name-input-wrap input{font-size:16px;min-height:48px}
+.builder-total small,.builder-disclaimer{font-size:11px}
+.builder-total .button{font-size:13px}
+.share-link,.surprise-button{font-size:13px;min-height:44px}
+.preview-caption{font-size:12px}
+.creation-name p{font-size:12px;line-height:1.9;max-width:400px}
+.story-copy p{font-size:14px}
+.faq summary,.faq details p{font-size:14px;line-height:2}
+.cart-item>div:last-child{min-width:0}
+.cart-item h3{font-size:14px}
+.cart-item p{font-size:12px;overflow-wrap:anywhere}
+.cart-item-controls{display:grid;grid-template-columns:1fr auto;gap:10px}
+.cart-item-price{font-size:13px}
+.quantity-controls{gap:9px;font-size:13px}
+.quantity-controls button{width:36px;height:36px}
+.cart-remove{justify-self:start;grid-column:1 / -1;font-size:12px;min-height:32px;padding-inline:0}
+.cart-bottom p{font-size:12px}
+.cart-head,.cart-bottom{flex-shrink:0}
+.cart-items{min-height:0}
+.product-meta>div{font-size:13px;line-height:1.8}
+.product-meta dd{max-width:65%;overflow-wrap:anywhere}
+.product-detail-copy>p{font-size:14px}
+@media(max-width:1100px){.hero .button{font-size:13px}.hero .text-link{font-size:12px}.desktop-nav{font-size:13px;gap:24px}.hero-flavor-tabs button{font-size:10px;padding-inline:9px}}
+@media(max-width:800px){
+ .header-actions{gap:12px}.desktop-nav{font-size:12px;gap:18px}
+ .hero-description{font-size:15px}.hero .button{font-size:12px}.hero .text-link{font-size:12px}
+ .hero-flavor-tabs{gap:5px;flex-wrap:wrap;width:100%;justify-content:center;bottom:-34px}
+ .hero-flavor-tabs button{font-size:10px;padding-inline:8px}
+ .section-heading>p{font-size:13px}.builder-total .button{font-size:13px}
+ .studio-preview{min-height:610px}.preview-stage .creation{height:430px;transform-origin:center}
+ .creation-name{margin-top:28px}.story-copy p{font-size:13px}
+}
+@media(max-width:600px){
+ .header-actions{gap:8px}.cart-trigger{min-height:44px;min-width:44px;gap:5px;padding:0}
+ .menu-toggle{width:44px;height:44px;align-items:center;min-width:44px}
+ .motion-toggle{width:36px;height:44px;min-width:36px;border:0}
+ .hero .button{font-size:12px;padding-inline:18px}.hero .text-link{font-size:12px}
+ .hero-buttons{gap:13px}.hero-description{font-size:15px}
+ .hero-flavor-tabs{bottom:-19px;gap:5px;width:100%}.hero-flavor-tabs button{font-size:10px;padding-inline:9px}
+ .hero{padding-bottom:65px}.scroll-note{bottom:6px}
+ .filter-tabs{flex-wrap:wrap;overflow:visible;gap:6px}.filter-tabs button{font-size:12px;padding-inline:12px;min-height:44px}
+ .flavor-card-bottom{flex-wrap:wrap;gap:10px;align-items:flex-start}.card-price{font-size:14px;line-height:1.9;flex:1;min-width:80px}
+ .card-price small{display:block;font-size:10px;margin:0}.card-add{width:44px;height:44px;font-size:24px}
+ .flavor-card p{font-size:12px;min-height:46px}.flavor-en{font-size:12px}
+ .flavor-card h3{font-size:17px}.flavor-card h3 button{min-height:36px}
+ .card-tag{font-size:10px}.demo-prices{font-size:11px}
+ .studio-preview{min-height:560px}.preview-stage .creation{height:430px;transform-origin:center}
+ .creation-name{margin-top:26px}.creation-name p{font-size:12px}
+ .vessel-choices button{font-size:12px}.vessel-choices small{font-size:10px}
+ .step-heading h3,.name-label,.extras-step label{font-size:13px}.step-heading small{font-size:11px}
+ .slot-group .scoop-slot{font-size:11px;gap:4px;padding-inline:5px;min-height:44px}
+ .slot-group .slot-remove{height:44px;min-height:44px;font-size:11px}
+ .builder-flavor{font-size:12px;min-height:74px}.extras-step select{font-size:13px;min-height:48px}
+ .builder-total{flex-wrap:wrap;gap:16px}.builder-total strong{font-size:21px}
+ .builder-total .button{font-size:13px;min-height:48px;flex:1;min-width:130px}
+ .builder-total small{font-size:11px}.builder-disclaimer{font-size:11px;line-height:2}
+ .share-link{font-size:12px}.story-copy p{font-size:14px}
+ .faq summary,.faq details p{font-size:13px}
+ .quantity-controls button{width:44px;height:44px}.cart-item-controls{grid-template-columns:1fr;gap:8px}
+ .cart-item-price{grid-row:2}.cart-remove{grid-row:3;min-height:44px}
+ .cart-item{grid-template-columns:60px minmax(0,1fr);gap:12px}.cart-item-visual{width:60px;height:60px}
+ .product-dialog>.dialog-close{position:sticky;top:12px;left:12px;margin:12px 12px -56px auto}
+ .product-detail-copy{padding:24px}.product-meta>div{font-size:12px}
+ .product-detail-art{min-height:240px}.product-detail-copy .button{min-height:48px}
+ .cart-bottom p{font-size:11px}.toast{font-size:12px;line-height:1.9}
+}
+@media(max-width:360px){.hero .button{font-size:11px;padding-inline:14px}.hero .text-link{font-size:11px}.hero-buttons{gap:10px}.filter-tabs button{padding-inline:11px}.slot-group .scoop-slot{font-size:10px}.studio-controls{padding-inline:15px}.builder-total .button{font-size:12px}.card-price{min-width:65px;font-size:13px}.flavor-card-bottom{gap:5px}.flavor-card h3{font-size:16px}}
